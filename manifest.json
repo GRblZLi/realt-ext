@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Realt Me",
+  "version": "1.0",
+
+  "icons": {
+    "128": ""
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "http://mogilev.irr.by/*",
+    "http://olx.by/*",
+    "http://kufar.by/*"
+  ],
+
+  "browser_action": {
+    "default_title": "Realt Me",
+    "default_icon": "",
+    "default_popup": "popup.html"
+  }
+
+}
